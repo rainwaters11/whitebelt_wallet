@@ -1,7 +1,7 @@
-# Stellar Connect Wallet 🚀
+# Stellar Connect Wallet 
 A streamlined Web3 decentralized application (dApp) built for the Stellar Journey to Mastery: White Belt Challenge. This project demonstrates core fundamentals of Stellar development, including secure wallet integration, real-time account data fetching, and testnet transaction execution.
 
-## 📝 Project Description
+## Project Description
 This dApp serves as a portal for users to interact with the Stellar Testnet. It provides a secure bridge to the Freighter Wallet, allowing users to authenticate, view their current XLM balances, and send testnet payments with real-time feedback.
 
 **Key Features:**
