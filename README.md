@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# Stellar Connect Wallet 🚀
+A streamlined Web3 decentralized application (dApp) built for the Stellar Journey to Mastery: White Belt Challenge. This project demonstrates core fundamentals of Stellar development, including secure wallet integration, real-time account data fetching, and testnet transaction execution.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Project Description
+This dApp serves as a portal for users to interact with the Stellar Testnet. It provides a secure bridge to the Freighter Wallet, allowing users to authenticate, view their current XLM balances, and send testnet payments with real-time feedback.
 
-Currently, two official plugins are available:
+**Key Features:**
+- **Wallet Integration**: Seamless connection and disconnection via the Freighter Wallet API.
+- **Balance Monitoring**: Real-time fetching of native XLM balances using the Stellar Horizon Testnet server.
+- **Transaction Management**: Automated transaction building, signing, and submission for 1.0 XLM payments.
+- **Live Feedback**: Instant UI updates providing transaction hashes and network status.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Setup Instructions
+Follow these steps to run the project locally on your machine.
 
-## React Compiler
+**Prerequisites**
+- Node.js (v18 or higher)
+- npm or yarn
+- Freighter Wallet extension installed in your browser (set to Testnet mode).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Installation**
+Clone the repository:
+```bash
+git clone https://github.com/rainwaters11/stellar-connect-wallet.git
+cd stellar-connect-wallet
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies:
+```bash
+npm install
 ```
+Start the development server:
+```bash
+npm run dev
+```
+Access the dApp: Open your browser to the local URL provided (usually http://localhost:5173).
+
+## 📸 Submission Screenshots
+Below is the visual evidence of the successful implementation of all Level 1 requirements.
+
+### 1. Wallet Connected State
+The application successfully interfaces with Freighter to retrieve and display the user's public key.
+*(Reference: [Screenshot from 2026-02-24 02-50-36.png](./screenshots/Screenshot%20from%202026-02-24%2002-50-36.png))*
+
+### 2. Balance Displayed
+The dApp queries the Horizon Testnet to display the current native XLM balance accurately.
+*(Reference: [Screenshot from 2026-02-24 02-51-08.png](./screenshots/Screenshot%20from%202026-02-24%2002-51-08.png))*
+
+### 3. Successful Testnet Transaction
+The transaction is built and sent to the Freighter wallet for a secure user signature.
+*(Reference: [Screenshot from 2026-02-24 02-51-25.png](./screenshots/Screenshot%20from%202026-02-24%2002-51-25.png))*
+
+### 4. Transaction Result & Hash
+Confirmation of the successful transaction submission, including the unique transaction hash for verification on the Stellar Expert explorer.
+*(Reference: [Screenshot from 2026-02-24 02-52-00.png](./screenshots/Screenshot%20from%202026-02-24%2002-52-00.png))*
+
+## 🛠️ Built With
+- **React** - Frontend Framework
+- **Stellar SDK** - Blockchain Interaction
+- **Freighter API** - Wallet Communication
+- **Vite** - Build Tool
