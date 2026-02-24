@@ -58,3 +58,7 @@ Confirmation of the successful transaction submission, including the unique tran
 - **Stellar SDK** - Blockchain Interaction
 - **Freighter API** - Wallet Communication
 - **Vite** - Build Tool
+
+### 🔗 Verify on Explorer
+You can view the successful transaction for this project on the Stellar Expert Testnet Explorer:
+[View Transaction](https://stellar.expert/explorer/testnet/tx/f71b7c1f79e088c45703e0a0db265543eff074f5606eb6cfb64adf21d3fca8f2)
